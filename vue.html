@@ -73,6 +73,7 @@ body {
             created: function () {
                 this.$root.$on('decodedCode', function (decodedText, decodedResult) {
                     this.decodedText = decodedText;
+                    console.log(decodedText);
                 }.bind(this));
             }
         });
